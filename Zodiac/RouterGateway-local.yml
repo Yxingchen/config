@@ -1,14 +1,14 @@
 spring:
   application:
-    name: router-gateway
+    name: RouterGateway
 zuul:
   routes:
     api-a:
       path: /es/**
-      serviceId: elasticsearch
+      serviceId: Elasticsearch
     api-b:
       path: /api-b/**
-      serviceId: service-feign
+      serviceId: ServiceFeign
 eureka:
   client:
     serviceUrl:
