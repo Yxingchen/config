@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: router-gateway
+zuul:
+  routes:
+    api-a:
+      path: /es/**
+      serviceId: elasticsearch
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8101/eureka/
+server:
+  port: 8103
