@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: local
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Yxingchen/config
+          search-paths: magic
+          username:
+          password:
+      label: master
