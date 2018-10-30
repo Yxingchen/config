@@ -1,12 +1,12 @@
 server:
-  port: 8201
+  port: 8202
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8101/eureka/
 spring:
   application:
-    name: security
+    name: shiro
   profiles:
     active: local
   datasource:
@@ -23,6 +23,5 @@ spring:
       repositories:
         enabled: true
 mybatis:
-  mapperLocations: classpath*:com/immortal/security/mapper/*/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
