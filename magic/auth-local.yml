@@ -1,0 +1,28 @@
+server:
+  port: 8202
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8101/eureka/
+spring:
+  application:
+    name: auth
+  profiles:
+    active: local
+  datasource:
+    hikari:
+      magic:
+        jdbc-url: jdbc:mysql://localhost:3306/magic?characterEncoding=utf-8
+        username: root
+        password:
+        driver-class-name: com.mysql.jdbc.Driver
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.70.128:9300
+      repositories:
+        enabled: true
+mybatis:
+  mapperLocations: classpath*:com/immortal/security/mapper/*/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
