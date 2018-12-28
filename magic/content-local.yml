@@ -26,3 +26,6 @@ mybatis:
   mapperLocations: classpath*:com/immortal/security/mapper/*/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
+feign: 
+  hystrix: 
+    enabled: true
