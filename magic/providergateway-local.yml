@@ -1,0 +1,11 @@
+server:
+  port: 8200
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8101/eureka/
+spring:
+  application:
+    name: providergateway
+  profiles:
+    active: local
