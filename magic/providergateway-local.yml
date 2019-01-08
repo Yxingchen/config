@@ -9,3 +9,8 @@ spring:
     name: providergateway
   profiles:
     active: local
+  gateway:
+    discovery:
+      locator:
+        enabled:true
+        lowerCaseServiceId:true
