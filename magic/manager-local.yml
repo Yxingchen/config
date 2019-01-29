@@ -9,3 +9,6 @@ spring:
     name: manager
   profiles:
     active: local
+feign:
+  hystrix:
+    enable: true
