@@ -11,4 +11,4 @@ spring:
     active: local
 feign:
   hystrix:
-    enable: true
+    enabled: true
