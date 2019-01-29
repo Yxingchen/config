@@ -14,3 +14,6 @@ spring:
       locator:
         enabled:true
         lowerCaseServiceId:true
+feign:
+  hystrix:
+    enable: true
