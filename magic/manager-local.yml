@@ -9,8 +9,6 @@ spring:
     name: manager
   profiles:
     active: local
-  main:
-    allow-bean-definition-overriding: true
 feign:
   hystrix:
     enabled: true
