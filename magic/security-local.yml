@@ -9,6 +9,10 @@ spring:
     name: security
   profiles:
     active: local
+  redis:
+    host: 192.168.70.128
+    port: 6379
+    password: stardust
   datasource:
     hikari:
       magic:
@@ -23,6 +27,17 @@ spring:
       repositories:
         enabled: true
 mybatis:
-  mapperLocations: classpath*:com/immortal/security/mapper/*/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
+feign:
+  hystrix:
+    enabled: true
+  httpclient:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
