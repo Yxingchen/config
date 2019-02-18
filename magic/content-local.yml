@@ -13,6 +13,11 @@ spring:
     host: 192.168.70.128
     port: 6379
     password: stardust
+    pool:
+      max-active: 8
+      max-wait: 2
+      max-idle: 8
+      min-idle: 0
   datasource:
     hikari:
       magic:
