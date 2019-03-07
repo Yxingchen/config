@@ -1,5 +1,5 @@
 server:
-  port: 8203
+  port: 8210
 eureka:
   client:
     serviceUrl:
@@ -12,7 +12,7 @@ spring:
   datasource:
     hikari:
       magic:
-        jdbc-url: jdbc:mysql://localhost:3306/magic?characterEncoding=utf-8
+        jdbc-url: jdbc:mysql://localhost:3306/magic?characterEncoding=utf-8&serverTimezone=GMT
         username: root
         password:
         driver-class-name: com.mysql.jdbc.Driver
@@ -23,6 +23,5 @@ spring:
       repositories:
         enabled: true
 mybatis:
-  mapperLocations: classpath*:com/immortal/security/mapper/*/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
