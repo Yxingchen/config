@@ -21,7 +21,7 @@ spring:
   datasource:
     hikari:
       collect:
-        jdbc-url: jdbc:mysql://localhost:3306/collect?characterEncoding=utf-8&serverTimezone=GMT
+        jdbc-url: jdbc:mysql://localhost:3306/yushan_collect?characterEncoding=utf-8&serverTimezone=GMT
         username: root
         password:
         driver-class-name: com.mysql.jdbc.Driver
