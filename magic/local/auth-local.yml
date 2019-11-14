@@ -1,9 +1,5 @@
 server:
-  port: 8210
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8101/eureka/
+  port: 8120
 spring:
   application:
     name: auth
