@@ -36,5 +36,5 @@ fdfs:
   thumbImage:
     width: 150
     height: 150
-  tracker-list: 192.168.70.131:22122
-  storage-url: http://192.168.70.131:8888
+  tracker-list: 47.106.98.71:22122
+  storage-url: http://47.106.98.71:8888
