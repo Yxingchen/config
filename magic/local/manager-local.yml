@@ -7,6 +7,7 @@ spring:
     active: local
   datasource:
     hikari:
+      maximum-pool-size: 3
       magic:
         jdbc-url: jdbc:mysql://localhost:3306/magic?characterEncoding=utf-8&serverTimezone=GMT&autoReconnect=true
         username: root
