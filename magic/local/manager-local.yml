@@ -12,6 +12,15 @@ spring:
         username: root
         password: stardust
         driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+    password: stardust
+    pool:
+      max-active: 8
+      max-wait: 2
+      max-idle: 8
+      min-idle: 0
   data:
     elasticsearch:
       cluster-name: elasticsearch
@@ -21,3 +30,11 @@ spring:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+fdfs:
+  connect-timeout: 600
+  so-timeout: 1500
+  thumbImage:
+    width: 150
+    height: 150
+  tracker-list: 192.168.70.131:22122
+  storage-url: http://192.168.70.131:8888
