@@ -31,8 +31,8 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 fdfs:
-  connect-timeout: 600
-  so-timeout: 1500
+  connect-timeout: 6000
+  so-timeout: 15000
   thumbImage:
     width: 150
     height: 150
